@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+
+        <!--
+      - #SIDEBAR
+    -->
+
+        <aside class="sidebar" data-sidebar>
+
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+                    <img src="./assets/images/my-avatar.jpg" alt="Shriniwas U" width="80">
+
+                </figure>
+                <h3 style="color:magenta">I'm <span class="text-slider" style="font-weight:300  ; color:orange"></span></h3>
+
+
+
+
+
+
+                <!-- Import typed.min.js file from typed.js folder -->
+                <script src="./lib/typed.min.js">
+                </script>
+
+                <!-- Add jquery cdn -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+                </script>
+
+                <!-- Add this script for successful 
+        implementation of typed.js  -->
+
+                <script type="text/javascript">
+                    var typed = new Typed('.text-slider', {
+                        strings: ["IIT Grad", "Senior S/W Developer", "Fast Learner"],
+                        loop: true,
+                        typeSpeed: 80,
+                        backDelay: 900,
+                        backSpeed: 30,
+                    });
+                </script>
+
+
+
+                <br>
+                <ul class="social-list">
+
+                    <li class="social-item">
+                        <a href="https://github.com/shriu1994" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/shriniwas-uplanchwar-70bb58b0/" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <i class="fa fa-envelope" style="font-size:22px;color:orange"></i>
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:shriu1994@gmail.com" class="contact-link">shriu1994@gmail.com</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <i class="fa fa-phone" style="font-size:22px;color:orange"></i>
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+91-9922101146" class="contact-link">+91-9922101146</a>
+                        </div>
+
+                    </li>
+
+
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Pune, Maharashtra, India</address>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+
+            </div>
+
+        </aside>
+
+
+
+
+
+        <!--
+      - #main-content
+    -->
+
+        <div class="main-content">
+
+            <!--
+        - #NAVBAR
+      -->
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+
+
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Blog</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" color="orange" data-nav-link><a aria-label="Open Shri's resume in a new tab" href="https://drive.google.com/file/d/1axdcolD69itdxpa4FAuBUhWyrH0D353_/view?usp=drivesdk" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a></button>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+
+
+
+            <!--
+        - #ABOUT
+      -->
+
+            <article class="about  active" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        ❖ Studied Masters(MTech) from <b>IIT Hyderabad</b> (India's Prestigious 8th ranked Institute) and currently working as a Senior Software Engineer(1.4 Years) at HCL Technologies, India.</p>
+                    <p> ❖ Deeply interested in the Back-end Developer, Front-end Developer, Software engineer. Specializes in using Python, SQL, Django, JavaScript, C, HTML5, CSS3, React </p>
+                    <p>❖ AWS CCP Certified 2022, JLPT N5, N4 Appearing (Dec 2022)</p>
+                    <p>❖ Received the Best Poster Presentation award in “International conference IIM-NMD 2021”.
+
+                        <p>❖ Certifications (Coursera) - Earned 15+ Certifications in Python 3 Programming, Data Structures, SQL, Database Management Systems, Object-Oriented Programming.</p>
+
+                        <p>❖ Total Internships earned- 4(1 in Japanese Firm) as Software Developer, Front-End Engineer, Quality Assurance Engineer.</p>
+                </section>
+                <!--
+          - service
+        -->
+
+                <section class="testimonials">
+
+                    <h3 class="h3 testimonials-title">Work Experience</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/hcl_logo.png" alt="HCL_logo" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>HCL Technologies, Senior Software Engineer(1.4 Yrs)</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        ❖ Created a Django based web application for labeling of IMAGES used by doctors to label chest X-ray images for various medical conditions
+                                        <br> ❖ Worked on AWS backend Technology one of the medical innovative projects for recording patients data using FHIR resources. <br> ❖ Technologies Used: Backend: Python -Django web framework, Frontend: HTML, CSS,
+                                        JavaScript Database: PostgreSQL, AWS services
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/IBY.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>I’m beside you Inc(Japanese Firm)Frontend Engineer</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        ❖ Redesign of Dashboard design where analytical results such as facial emotion are shown. <br> ❖ Implemented Login page, guide page, and landing pages of facial emotions.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/gnb.jpg" alt="Emily evans" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Godrej & Boyce as a Quality Assurance Eng</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        ❖ To encourage every individual in the organization to continuously improve Quality parameters such as 5S System, Kaizen, & 7 QC tools. <br> ❖ To plan, direct or coordinate quality assurance programs and formulate
+                                        quality control policies.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+
+                </section>
+
+
+                <!--
+          - testimonials modal
+        -->
+
+                <div class="modal-container" data-modal-container>
+
+                    <div class="overlay" data-overlay></div>
+
+                    <section class="testimonials-modal">
+
+                        <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+
+                    </section>
+
+                </div>
+
+                <section class="service">
+
+                    <h3 class="h3 service-title">My Skills</h3>
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Programing Languages</h4>
+                    </div>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/python-logo-1.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Python</h4>
+
+                                <p class="service-item-text">Intermediate</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="service-icon-box">
+                                <img src="./assets/images/javascript.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">JavaScript</h4>
+
+                                <p class="service-item-text">
+                                    Intermediate
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="service-icon-box">
+                                <img src="./assets/images/java.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Java</h4>
+
+                                <p class="service-item-text">
+                                    Beginner&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="service-icon-box">
+                                <img src="./assets/images/c.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">C</h4>
+
+                                <p class="service-item-text">
+                                    Beginner&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                    </ul>
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Web Development Skills</h4>
+                    </div>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/html5.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">HTML</h4>
+
+                                <p class="service-item-text">
+                                    Expert&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div class="service-icon-box">
+                                <img src="./assets/images/css3.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">CSS & Bootstrap</h4>
+
+                                <p class="service-item-text">
+                                    Expert&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div class="service-icon-box">
+                                <img src="./assets/images/django.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Django</h4>
+
+                                <p class="service-item-text">
+                                    Intermediate
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/nodejs.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">jQuery & NodeJS</h4>
+
+                                <p class="service-item-text">
+                                    Beginner&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+
+                    </ul>
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Other Skills</h4>
+                    </div>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/html5.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">PostgreSQL</h4>
+
+                                <p class="service-item-text">
+                                    Expert&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div class="service-icon-box">
+                                <img src="./assets/images/css3.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">AWS</h4>
+
+                                <p class="service-item-text">
+                                    Expert&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div class="service-icon-box">
+                                <img src="./assets/images/django.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">GIT</h4>
+
+                                <p class="service-item-text">
+                                    Intermediate
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/nodejs.png
+                " alt="design icon" width="30">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Healthcare Simulator</h4>
+
+                                <p class="service-item-text">
+                                    Beginner&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+
+                </section>
+
+
+                <!--
+          - testimonials
+        -->
+
+                <section class="testimonials">
+
+                    <h3 class="h3 testimonials-title">Achievements</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/aws.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>AWS Cloud CCP Certified</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I have cleared AWS CCP certification exam. Highly recommend to go through Stéphane Maarek course on Udemy Ultimate AWS Certified Cloud Practitioner - 2022.
+
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/mhrd.jpg" alt="Jessica miller" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>AIR 137 in GATE-19</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Graduate Aptitude Test in Engineer <br> Secured 95.25 Percentile (AIR 137) in GATE (Graduate Aptitude Test in Engineering) 2019 exam all over India. <br> Issued by AICTE – GATE, Department of Higher Education, Ministry
+                                        of Human Resources Development (MHRD), Government of India. · July 2019
+
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/iith.jpg" alt="Emily evans" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Poster Presentaion award</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Best Poster Presentation Award in "NMD-ATM 2020 Indian Institute of Metals" in the category of "Advances in Materials Science-Mechanical behavior of materials".
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+
+                </section>
+
+
+                <!--
+          - testimonials modal
+        -->
+
+
+
+                <!--
+          - clients
+        -->
+
+
+
+
+
+            </article>
+
+
+
+
+
+            <!--
+        - #RESUME
+      -->
+
+
+
+
+
+
+
+            <!--
+        - #PORTFOLIO
+      -->
+
+            <article class="portfolio" data-page="portfolio">
+
+                <header>
+                    <h2 class="h2 article-title">Projects</h2>
+                </header>
+
+                <section class="projects">
+
+                    <ul class="filter-list">
+
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+
+
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Applications</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Web development</button>
+                        </li>
+
+                    </ul>
+
+                    <div class="filter-select-box">
+
+                        <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+                        <ul class="select-list">
+
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+
+
+                            <li class="select-item">
+                                <button data-select-item>Applications</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Web development</button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <ul class="project-list">
+
+                        <li class="project-item  active" data-filter-item data-category="web development">
+                            <a href="https://github.com/shriu1994/Project-on-Interactive-Restaurant-Website">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Interactive Restaurant Table booking System</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web development">
+                            <a href="https://github.com/shriu1994/Bombay-Coffeee-shop-website">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-2.jpg" width="5px" alt="orizon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Bombay Coffee Shop website</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="applications">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-3.png" alt="fundo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Django based app for labeling of IMAGES</h3>
+
+                                <p class="project-category">Applications</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="applications">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">medical projects for recording patients data using FHIR resources</h3>
+
+                                <p class="project-category">Applications</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web development">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Calculator App</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="applications">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Personal Portfolio</h3>
+
+                                <p class="project-category">Applications</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web development">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Pricing Panel Project</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+
+
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+        - #BLOG
+      -->
+
+            <article class="blog" data-page="blog">
+
+                <header>
+                    <h2 class="h2 article-title">Blog</h2>
+                </header>
+
+                <section class="blog-posts">
+
+                    <ul class="blog-posts-list">
+
+                        <li class="blog-post-item">
+                            <a href="https://python.plainenglish.io/python-a-gateway-to-the-future-of-software-technology-76ac127a1c51">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/pythongateway.jpeg" alt="Design conferences in 2022" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+
+                                    <h3 class="h3 blog-item-title">How is Python a Gateway to the Future of Software Technology?</h3>
+
+                                    <p class="blog-text">
+                                        In Python’s scientific programming area, we can expect to witness continued growth. As a result, things that support the performance and stability of Python as a language will continue to evolve. Apart from that, Python is a very powerful and stable programming
+                                        language. Even if you stopped development today, Python is a good sewed-up language.
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="https://python.plainenglish.io/complete-roadmap-to-start-python-programming-7430c78a191c">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/pythondev.jpg" alt="Best fonts every designer" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+
+
+                                    <h3 class="h3 blog-item-title">A Complete Roadmap to Python Programming for Beginners</h3>
+
+                                    <p class="blog-text">
+                                        It is simpler to fit into the community if you have solid RDBMS and Data Structure and Algorithms skills. It is necessary to be proficient in mathematics, but it is not required.
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="https://python.plainenglish.io/python-mini-project-make-a-calculator-ef94b72e590f">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/calculator.png" alt="Design digest #80" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+
+
+                                    <h3 class="h3 blog-item-title">Python Mini Project: Make a Calculator</h3>
+
+                                    <p class="blog-text">
+                                        A guide on making a calculator using Python.
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="https://www.linkedin.com/pulse/recursion-basics-coding-problems-shriniwas-uplanchwar/">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/recursion.jpg" alt="UI interactions of the week" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+
+                                    <h3 class="h3 blog-item-title">Recursion: Basics and Coding Problems</h3>
+
+                                    <p class="blog-text">
+                                        Recursion is something defining problems in terms of calling itself. Its a technique which defines the problem in its own sub problem. Problem and calling to its sub problem or part of the problem
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="https://www.linkedin.com/pulse/recursion-2-remove-replace-type-shriniwas-uplanchwar/">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/recursion2.png" alt="The forgotten art of spacing" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+
+
+                                    <h3 class="h3 blog-item-title">Recursion 2:: Remove, Replace Type</h3>
+
+                                    <p class="blog-text">
+                                        The following problems has the similar kind of logic. So, I compiled them together so that we can build the logic behind them quickly. Go through them and we will get better understanding on recursion.
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+        - #CONTACT
+      -->
+
+            <article class="contact" data-page="contact">
+
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+
+
+                <section class="contact-form">
+
+
+                    <form action="mailto:shriu1994@gmail.com" method="post" enctype="text/plain">
+
+
+                        <div class="input-wrapper ">
+                            <input type="text " name="name " class="form-input " placeholder="Full name " required data-form-input>
+
+                            <input type="email " name="email " class="form-input " placeholder="Email address " required data-form-input>
+                        </div>
+
+                        <textarea name="message " class="form-input " placeholder="Your Message " required data-form-input></textarea>
+
+
+                        <button class="form-btn " type="submit ">
+              <ion-icon name="paper-plane "></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+                    </form>
+
+                </section>
+
+            </article>
+
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js "></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module " src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
+
+</body>
+
+</html>
